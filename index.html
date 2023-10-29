@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="customer-form">
+        <h1>Customer Survey Form</h1>
+        <form  id="form">
+           <div id="label-input-div">
+            <label for="First Name">First Name</label>
+            <input type="text" placeholder="Enter Your First name" id="input" id="firstName" required>
+           </div>
+           <div id="label-input-div">
+            <label for="Last Name">Last Name</label>
+            <input type="text" placeholder="Enter Your Last name" id="input" id="lastName"  required>
+            </div>
+            <div id="label-input-div">
+            <label for="date" >Date of Birth</label>
+            <input type="date" placeholder="dd/mm/yy"  id="input" id="dob" required>
+            </div>
+            <div id="label-input-div">
+            <label for="country" >Select Country</label>
+            <select name="country" id="country" id="input">
+                <option value="India">Select</option>
+                <option value="India">India</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+                <option value="brazil">Brazil</option>
+            </select>
+            </div>
+          
+        <label for="gender" id="input" id="gender">Gender:</label>
+            
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+       
+    
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="others">Others</label>
+
+        <div id="label-input-div">
+         <label for="profession">Profession</label>
+        <input type="text" placeholder="Enter your Profession" id="input" id="profession" required>
+        </div>
+        <div id="label-input-div">
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Enter your Email" id="input" id="email" required>
+        </div>
+        <div id="label-input-div">
+        <label for="number">Mobile Number</label>
+        <input type="mobile" placeholder="Enter your Mobile" id="input"  id="number" id="mobile" required>
+        </div>
+       <div id="submit-reset-div">
+        <button id="submit" type="submit"> Submit</button>
+        <button id="reset"> Reset</button>
+       </div>
+        </form>
+       
+    </div>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Survey Form Submission</h2>
+            <p><strong>First Name:</strong> <span id="popupFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="popupLastName"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="popupDob"></span></p>
+            <p><strong>Country:</strong> <span id="popupCountry"></span></p>
+            <p><strong>Gender:</strong> <span id="popupGender"></span></p>
+            <p><strong>Profession:</strong> <span id="popupProfession"></span></p>
+            <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="popupMobile"></span></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+   
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
